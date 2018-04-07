@@ -1,7 +1,7 @@
 'use strict'
 
-import express from 'express'
-import body_parser from 'body-parser'
+const express = require('express')
+const body_parser = require('body-parser')
 
 const app = express()
 app.use('/public', express.static(__dirname + '/public'))
