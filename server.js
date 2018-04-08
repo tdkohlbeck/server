@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html')
 })
 
+app.get('/resume', (req, res) => {
+  res.sendFile(__dirname + '/public/resume.html')
+})
+
 const port = process.env.PORT || 7789
 app.listen(
   port,

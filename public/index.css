@@ -5,22 +5,57 @@
   padding: 0;
 }
 
-div#container {
-  display: flex;
-  height: 100vh;
+#about-btn {
+  width: 3rem;
+}
+#contact-btn {
+  width: 2rem;
+}
+#projects-btn {
+  width: 3rem;
+}
+#resume-btn {
+  width: 2.75rem;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: .05em dashed grey;
+div#container {
   position: fixed;
-  padding: 0 1rem;
+  display: flex;
+  height: 100vh;
+  width: 100%
+}
+div#navbar {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem grey;
   top: 0;
   width: 100%;
   height: 5rem;
   background-color: #fafafa;
+}
+
+#logo {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 1 25%;
+  margin-left: -1rem;
+}
+
+#logo img {
+  width: 10rem;
+}
+
+nav {
+  padding: 0 1rem;
+  flex: 1 1 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 div#content {
@@ -40,22 +75,23 @@ a {
 @media (min-width: 700px) {
   nav {
     right: 0;
-    width: 5rem;
+    width: 10rem;
     height: 100%;
 
     border-bottom: 0;
     border-left: .05rem dashed;
 
+    justify-content: flex-start;
     flex-direction: column;
-    padding: 1rem 0;
   }
 
-  nav > * {
-    padding: 0;
+  #sig-btn {
+    padding-bottom: 0
+    padding-right: 2rem;
   }
 
   div#content {
     margin-top: 0;
-    margin-right: 5rem;
+    margin-right: 10rem;
   }
 }

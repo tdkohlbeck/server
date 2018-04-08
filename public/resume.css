@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+}
+
+:root {
+  font-size: calc(0.5em + 1vw);
+  line-height: 1.25em;
+}
+
+#name {
+  text-align: center;
+  margin: 1em;
+  margin-bottom: 0.5em;
+}
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2em;
+  margin-bottom: 0.75em;
+}
+
+#contact span {
+  text-align: center;
+  margin: 0.5em 1em;
+  font-size: .95rem;
+  white-space: nowrap;
+}
+
+#contact > span {
+  margin: 0.25em 0em;
+}
+
+#github-link a, a:visited {
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+  color: black;
+}
+
+section {
+  margin: 0em 1em;
+  margin-left: 2em;
+  margin-bottom: 1.5em; /* fiddle with */
+}
+
+section > h1 {
+  margin-bottom: 0.5em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  text-align: justify;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1em;
+  margin-bottom: 0.75em;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1em;
+  white-space: nowrap;
+  flex-grow: 2;
+}
+
+.details > span {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.timespan {
+  text-align: right;
+}
+
+/* white-space keeps 'Summer' and '2013' together,
+ * <wbr> keeps '2008' and the em-dash together
+ */
+.timespan span {
+  font-style: italic;
+  white-space: nowrap;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 4em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+img {
+  width: 8em;
+  opacity: 0.95;
+}
+
+@media (min-width: 40em) {
+  body {
+    width: 44em; /* magic number? no jumping */
+    margin: 0 auto;
+  }
+}
