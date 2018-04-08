@@ -73,21 +73,31 @@ a {
 }
 
 @media (min-width: 700px) {
-  nav {
+  div#navbar {
     right: 0;
     width: 10rem;
     height: 100%;
 
-    border-bottom: 0;
-    border-left: .05rem dashed;
 
     justify-content: flex-start;
     flex-direction: column;
+    display: block;
   }
 
-  #sig-btn {
-    padding-bottom: 0
-    padding-right: 2rem;
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  #logo {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  #logo img {
+    width: 100%;
   }
 
   div#content {
