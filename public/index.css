@@ -75,29 +75,25 @@ a {
 @media (min-width: 700px) {
   div#navbar {
     right: 0;
-    width: 10rem;
+    width: 7rem;
     height: 100%;
-
+    overflow: visible;
 
     justify-content: flex-start;
     flex-direction: column;
-    display: block;
   }
 
   nav {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 1rem;
+    flex: none;
   }
 
   #logo {
     margin: 0;
+    margin-right: 1.75rem;
     padding: 0.5rem;
-  }
-
-  #logo img {
-    width: 100%;
+    flex: none;
   }
 
   div#content {
