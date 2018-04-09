@@ -1,3 +1,5 @@
+:root { font-size: calc(.33em + 1vw); }
+
 * {
   font-family: Helvetica Neue;
   box-sizing: border-box;
@@ -72,12 +74,15 @@ a {
   color: purple;
 }
 
+@media (min-width: 300px) {
+  :root { font-size: calc(.5em + 1vw); }
+}
+
 @media (min-width: 700px) {
   div#navbar {
     right: 0;
     width: 7rem;
     height: 100%;
-    overflow: visible;
 
     justify-content: flex-start;
     flex-direction: column;
@@ -91,7 +96,7 @@ a {
 
   #logo {
     margin: 0;
-    margin-right: 1.75rem;
+    margin-right: 1.25rem;
     padding: 0.5rem;
     flex: none;
   }
