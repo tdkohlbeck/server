@@ -7,17 +7,21 @@
   padding: 0;
 }
 
-#about-btn {
+svg#about {
   width: 3rem;
+  fill: #33BBFF;
 }
-#contact-btn {
+svg#contact {
   width: 2rem;
+  fill: #334BFF;
 }
-#projects-btn {
+svg#projects {
   width: 3rem;
+  fill: #8F33FF;
 }
-#resume-btn {
+svg#resume {
   width: 2.75rem;
+  fill: #FF33FF;
 }
 
 div#container {
@@ -56,7 +60,7 @@ nav {
   padding: 0 1rem;
   flex: 1 1 75%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 
