@@ -1,10 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Georgia;
 }
 
 :root {
+  font-family: Georgia;
   font-size: calc(0.5em + 1vw);
   line-height: 1.25em;
 }
@@ -26,7 +26,7 @@
 #contact span {
   text-align: center;
   margin: 0.5em 1em;
-  font-size: .95rem;
+  font-size: .95em;
   white-space: nowrap;
 }
 
@@ -38,6 +38,12 @@
   text-decoration: none;
   border-bottom: 1px dotted black;
   color: black;
+  margin: 0;
+}
+
+#email-part {
+  color: grey;
+  margin: 0; !important
 }
 
 section {
@@ -57,37 +63,10 @@ section > h1 {
   text-align: justify;
 }
 
-.header {
+#time-and-loc {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 0 1em;
-  margin-bottom: 0.75em;
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-  margin-right: 1em;
-  white-space: nowrap;
-  flex-grow: 2;
-}
-
-.details > span {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.timespan {
-  text-align: right;
-}
-
-/* white-space keeps 'Summer' and '2013' together,
- * <wbr> keeps '2008' and the em-dash together
- */
-.timespan span {
-  font-style: italic;
-  white-space: nowrap;
+  padding-bottom: 0.5em;
 }
 
 footer {
